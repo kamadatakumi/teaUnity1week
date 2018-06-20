@@ -3,11 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using TMPro;
 
 public class StartGame : MonoBehaviour {
-    GameObject titletext1;
-    GameObject titletext2;
-    GameObject titletext3;
+    TextMeshProUGUI titletext1;
+    TextMeshProUGUI titletext2;
+    TextMeshProUGUI titletext3;
     GameObject titleimage;
     float delta=0;
     bool key=false;
@@ -15,12 +16,12 @@ public class StartGame : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-        titletext1 = GameObject.Find("Title1");
-        titletext2 = GameObject.Find("Title2");
-        titletext3 = GameObject.Find("Description");
-        titleimage= GameObject.Find("TitleDes");
+        titletext1 = GameObject.Find("Title1").GetComponent<TextMeshProUGUI>();
+        titletext2 = GameObject.Find("Title2").GetComponent<TextMeshProUGUI>();
+        titletext3 = GameObject.Find("Description").GetComponent<TextMeshProUGUI>();
+        titleimage = GameObject.Find("TitleDes");
 
-        titletext3.GetComponent<Text>().enabled = false;
+        titletext3.GetComponent<TextMeshProUGUI>().enabled = false;
         titleimage.GetComponent<Image>().enabled = false;
     }
 	
@@ -28,9 +29,9 @@ public class StartGame : MonoBehaviour {
 	void Update () {
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            titletext1.GetComponent<Text>().enabled = false;
-            titletext2.GetComponent<Text>().enabled = false;
-            titletext3.GetComponent<Text>().enabled = true;
+            titletext1.GetComponent<TextMeshProUGUI>().enabled = false;
+            titletext2.GetComponent<TextMeshProUGUI>().enabled = false;
+            titletext3.GetComponent<TextMeshProUGUI>().enabled = true;
             titleimage.GetComponent<Image>().enabled = true;
 
             key = true;

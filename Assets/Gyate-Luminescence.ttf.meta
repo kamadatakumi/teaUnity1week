@@ -1,0 +1,23 @@
+fileFormatVersion: 2
+guid: 8a11a1f0779389148b04428b5d2edd68
+timeCreated: 1529481490
+licenseType: Free
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Gyate-Luminescence
+  fontNames:
+  - Gyate-Luminescence
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
